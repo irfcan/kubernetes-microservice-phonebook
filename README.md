@@ -15,9 +15,9 @@ Optional: with Traefik Ingress everything is reachable on one port
 (`/` -> web server, `/result` -> result server).
 
 ## Repository layout
-image_for_web_server/ Flask app + Dockerfile (add/update/delete)
-image_for_result_server/ Flask app + Dockerfile (search)
-phonebook-chart/ Helm chart (Deployments, Services, ConfigMaps, Secret, PV/PVC, optional Ingress)
+- image_for_web_server/ Flask app + Dockerfile (add/update/delete)
+- image_for_result_server/ Flask app + Dockerfile (search)
+- phonebook-chart/ Helm chart (Deployments, Services, ConfigMaps, Secret, PV/PVC, optional Ingress)
 
 ## Build and push the images
 
