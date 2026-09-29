@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  MYSQL_DATABASE_HOST: mysql
+  MYSQL_USER: phonebook
+kind: ConfigMap
+metadata:
+  name: server-cm

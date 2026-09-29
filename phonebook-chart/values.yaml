@@ -1,0 +1,5 @@
+webserver_image: irfcan/webserver:latest
+resultserver_image: irfcan/resultserver:latest
+ingress:
+  enabled: false
+  className: traefik

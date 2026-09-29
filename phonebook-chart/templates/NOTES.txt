@@ -1,0 +1,15 @@
+Phonebook installed: {{ .Release.Name }}
+
+Web server (add/update/delete): http://<NODE-IP>:30001
+Result server (search):         http://<NODE-IP>:30002
+{{- if .Values.ingress.enabled }}
+
+Ingress is enabled (Traefik):
+  http://<NODE-IP>:<TRAEFIK-NODEPORT>/          -> web server
+  http://<NODE-IP>:<TRAEFIK-NODEPORT>/result    -> result server
+  Find the port with: kubectl get svc -n traefik
+{{- end }}
+
+To use your own images:
+  helm upgrade {{ .Release.Name }} ./phonebook-chart \
+    --set webserver_image=<image> --set resultserver_image=<image>
