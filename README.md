@@ -1,5 +1,8 @@
 # Phonebook Microservice on Kubernetes (Flask + MySQL + Helm)
 
+![Project architecture](docs/Microservice_structure.png)
+*Diagram: Clarusway course material.*
+
 A phonebook web application split into two Flask microservices backed by MySQL,
 deployed on a Kubernetes cluster (1 master + 1 worker on AWS EC2) and packaged as a Helm chart.
 
